@@ -15,3 +15,19 @@
     padding: 25px;
     gap: 25px;
 }
+
+.tropical {
+    background: rgb(241, 160, 179);
+}
+
+.polar {
+    background: rgb(155, 169, 225);
+}
+
+.mountain {
+    background: rgb(101, 130, 109);
+}
+
+.desert {
+    background: rgb(236, 221, 159);
+}
