@@ -1,0 +1,17 @@
+#name-city {
+    display: grid;
+    place-items: center;
+    padding: 25px;
+}
+
+#dropdowns {
+    display: grid;
+    place-items: center;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    gap: 25px;
+}

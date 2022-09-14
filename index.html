@@ -8,7 +8,7 @@
 
         <!-- title and favicon -->
         <title>City Builder</title>
-        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <link rel="icon" type="image/x-icon" href=".assets/alchemy-favicon.png" />
 
         <!-- js -->
         <script type="module" src="app.js"></script>
@@ -19,22 +19,24 @@
         <!-- css -->
         <link rel="stylesheet" href="styles/reset.css" />
         <link rel="stylesheet" href="styles/global.css" />
-        <!-- add link for page specific css -->
+        <link rel="stylesheet" href="styles/city.css" />
     </head>
 
     <body>
         <header>
-            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <img class="logo" src="assets/citybuilder.png" alt="logo" />
             <h1>City Builder</h1>
+            <img class="logo" src="assets/citybuilder.png" alt="logo" />
         </header>
 
         <main>
             <section id="name-city">
                 <label>
                     Name your city!
+                    <br />
                     <input id="name-input" />
+                    <button id="name-button">Submit</button>
                 </label>
-                <button id="name-button">Select</button>
             </section>
 
             <section id="dropdowns">
@@ -57,6 +59,15 @@
                         <option value="industrial">Industrial</option>
                     </select>
                 </label>
+            </section>
+
+            <section id="images">
+                <img id="climate-img" class="image" src="/assets/tropical-climate.jpeg" />
+                <img
+                    id="architecture-img"
+                    class="image"
+                    src="/assets/midcentury-architecture.jpeg"
+                />
             </section>
         </main>
     </body>

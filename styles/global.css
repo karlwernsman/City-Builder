@@ -13,12 +13,12 @@ body {
 }
 
 header {
-    position: sticky;
     top: 0;
     padding: 15px;
     height: 80px;
 
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 
