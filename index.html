@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>City Builder</title>
+        <link rel="icon" type="image/x-icon" href=".assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel&family=Great+Vibes&family=Prompt&family=Righteous&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/city.css" />
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <h1>City Builder</h1>
+        </header>
 
-</head>
+        <main>
+            <section id="edits" class="edit">
+                <label>
+                    Name your city!
+                    <br />
+                    <input type="text" id="name-input" />
+                </label>
+                <br />
+                <label>
+                    Climate
+                    <br />
+                    <select id="climate-select">
+                        <option value="tropical">Tropical</option>
+                        <option value="polar">Polar</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="desert">Desert</option>
+                    </select>
+                </label>
+                <br />
+                <label>
+                    Architecture
+                    <br />
+                    <select id="architecture-select">
+                        <option value="mid-century">Mid-Century Modern</option>
+                        <option value="renaissance">Renaissance</option>
+                        <option value="victorian">Victorian</option>
+                        <option value="industrial">Industrial</option>
+                    </select>
+                </label>
+                <br />
+                <label>
+                    Add attractions
+                    <br />
+                    <div id="attraction-line">
+                        <input type="text" id="attraction-input" />
+                        <button id="add-attraction-button">Add</button>
+                    </div>
+                </label>
+            </section>
 
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+            <article id="display">
+                <h1 class="howdy">Howdy from <span id="city-name"></span>!</h1>
+                <div id="images-div">
+                    <img id="climate-img" class="image" src="/assets/tropical-climate.jpeg" />
+                    <img
+                        id="architecture-img"
+                        class="image"
+                        src="/assets/mid-century-architecture.jpeg"
+                    />
+                </div>
+                <ul id="attraction-list"></ul>
+            </article>
+        </main>
+    </body>
 </html>

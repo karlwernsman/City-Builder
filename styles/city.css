@@ -1,0 +1,88 @@
+main {
+    display: grid;
+    grid-template-columns: 150px min-content;
+    gap: 15px;
+    align-items: start;
+    grid-gap: 100px;
+}
+
+label {
+    display: grid;
+}
+
+article {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background: rgb(155, 169, 225);
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.howdy {
+    grid-row-start: 1;
+}
+
+#images-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    grid-row-start: 2;
+}
+
+#attraction-list {
+    grid-row-start: 3;
+}
+
+img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    padding: 25px;
+}
+
+#attraction-line {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+.tropical {
+    background: hsl(32, 84%, 73%);
+    border: 15px groove rgb(255, 245, 160);
+    color: rgb(83, 55, 40);
+}
+
+.polar {
+    background: rgb(155, 169, 225);
+    border: 15px groove rgb(85, 99, 180);
+    color: rgb(232, 232, 232);
+}
+
+.mountain {
+    background: rgb(101, 130, 109);
+    border: 15px groove rgb(155, 181, 165);
+    color: blanchedalmond;
+}
+
+.desert {
+    background: rgb(236, 221, 159);
+    border: 15px groove rgb(199, 178, 145);
+    color: rgb(103, 125, 111);
+}
+
+.mid-century {
+    font-family: 'Righteous', cursive;
+}
+
+.renaissance {
+    font-family: 'Cinzel', serif;
+}
+
+.victorian {
+    font-family: 'Great Vibes', cursive;
+}
+
+.industrial {
+    font-family: 'Prompt', sans-serif;
+}
