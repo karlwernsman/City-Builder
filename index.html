@@ -15,6 +15,12 @@
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel&family=Great+Vibes&family=Prompt&family=Righteous&display=swap"
+            rel="stylesheet"
+        />
 
         <!-- css -->
         <link rel="stylesheet" href="styles/reset.css" />
@@ -30,15 +36,13 @@
         </header>
 
         <main>
-            <section id="name-city">
+            <section id="edits">
                 <label>
                     Name your city!
                     <br />
                     <input type="text" id="name-input" />
                 </label>
-            </section>
-
-            <section id="dropdowns">
+                <br />
                 <label>
                     Climate
                     <br />
@@ -49,7 +53,7 @@
                         <option value="desert">Desert</option>
                     </select>
                 </label>
-
+                <br />
                 <label>
                     Architecture
                     <br />
@@ -60,9 +64,7 @@
                         <option value="industrial">Industrial</option>
                     </select>
                 </label>
-            </section>
-
-            <section id="attraction">
+                <br />
                 <label>
                     Add attractions
                     <br />
@@ -71,18 +73,16 @@
                 </label>
             </section>
 
-            <section id="name-display">
+            <article id="display">
                 <!-- this will be an h1 displaying name of city -->
-            </section>
-
-            <section id="images">
                 <img id="climate-img" class="image" src="/assets/tropical-climate.jpeg" />
                 <img
                     id="architecture-img"
                     class="image"
                     src="/assets/midcentury-architecture.jpeg"
                 />
-            </section>
+            </article>
+
             <ul id="attraction-list"></ul>
         </main>
     </body>

@@ -1,25 +1,18 @@
-#name-city {
+#edits {
     display: grid;
-    place-items: center;
-    padding: 25px;
+    padding: 5px;
 }
 
-#dropdowns {
+#display {
     display: grid;
     place-items: center;
+    padding: 5px;
 }
 
-#attraction {
-    display: grid;
-    place-items: center;
-    padding: 25px;
-}
-
-#images {
+img {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 25px;
-    gap: 25px;
+    padding: 15px;
 }
 
 .tropical {
@@ -38,6 +31,18 @@
     background: rgb(236, 221, 159);
 }
 
-label {
-    text-align: center;
+.mid-century-modern {
+    font-family: 'Righteous', cursive;
+}
+
+.renaissance {
+    font-family: 'Cinzel', serif;
+}
+
+.victorian {
+    font-family: 'Great Vibes', cursive;
+}
+
+.industrial {
+    font-family: 'Prompt', sans-serif;
 }
