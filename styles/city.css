@@ -9,6 +9,12 @@
     place-items: center;
 }
 
+#attraction {
+    display: grid;
+    place-items: center;
+    padding: 25px;
+}
+
 #images {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,4 +36,8 @@
 
 .desert {
     background: rgb(236, 221, 159);
+}
+
+label {
+    text-align: center;
 }

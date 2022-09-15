@@ -34,14 +34,14 @@
                 <label>
                     Name your city!
                     <br />
-                    <input id="name-input" />
-                    <button id="name-button">Submit</button>
+                    <input type="text" id="name-input" />
                 </label>
             </section>
 
             <section id="dropdowns">
                 <label>
                     Climate
+                    <br />
                     <select id="climate-select">
                         <option value="tropical">Tropical</option>
                         <option value="polar">Polar</option>
@@ -52,12 +52,22 @@
 
                 <label>
                     Architecture
+                    <br />
                     <select id="architecture-select">
                         <option value="mid-century-modern">Mid-Century Modern</option>
                         <option value="renaissance">Renaissance</option>
                         <option value="victorian">Victorian</option>
                         <option value="industrial">Industrial</option>
                     </select>
+                </label>
+            </section>
+
+            <section id="attraction">
+                <label>
+                    Add attractions
+                    <br />
+                    <input type="text" id="attraction-input" />
+                    <button id="add-attraction-button">Add</button>
                 </label>
             </section>
 
@@ -73,6 +83,7 @@
                     src="/assets/midcentury-architecture.jpeg"
                 />
             </section>
+            <ul id="attraction-list"></ul>
         </main>
     </body>
 </html>
