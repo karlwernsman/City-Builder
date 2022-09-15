@@ -12,8 +12,8 @@ const architectureImg = document.getElementById('architecture-img');
 /* State */
 const city = {
     name: '',
-    climate: '',
-    architecture: '',
+    climate: 'tropical',
+    architecture: 'mid-century',
     attractions: '',
 };
 /* Events */
@@ -34,7 +34,7 @@ architectureSelect.addEventListener('change', () => {
 
 /* Display Functions */
 function displayCity() {
-    article.classList = '';
+    article.classList.value = '';
     article.classList.add(city.climate, city.architecture);
     cityName.textContent = city.name;
     climateImg.src = 'assets/' + city.climate + '-climate.jpeg';
