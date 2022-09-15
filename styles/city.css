@@ -1,18 +1,29 @@
+main {
+    display: grid;
+    grid-template-columns: 150px min-content;
+    gap: 15px;
+    align-items: start;
+}
+
 #edits {
     display: grid;
     padding: 5px;
 }
 
-#display {
+article {
     display: grid;
-    place-items: center;
-    padding: 5px;
+    grid-template-columns: 1fr 1fr;
 }
 
 img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 15px;
+}
+
+#attraction-line {
+    display: grid;
+    grid-template-columns: 1fr max-content;
 }
 
 .tropical {
