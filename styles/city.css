@@ -3,22 +3,34 @@ main {
     grid-template-columns: 150px min-content;
     gap: 15px;
     align-items: start;
+    grid-gap: 100px;
 }
 
 #edits {
-    display: grid;
     padding: 5px;
+}
+
+.edit {
+    display: grid;
+}
+
+label {
+    display: grid;
 }
 
 article {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background: rgb(155, 169, 225);
 }
 
 img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 15px;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
 }
 
 #attraction-line {
