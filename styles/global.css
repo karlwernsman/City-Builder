@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: rgb(255, 251, 241);
     --header-background: rgb(254, 251, 245);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
@@ -16,7 +16,7 @@ header {
     top: 0;
     padding: 15px;
     height: 80px;
-
+    color: rgb(95, 78, 56);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,4 +32,5 @@ header .logo {
 
 main {
     padding: 20px;
+    color: rgb(87, 73, 53);
 }
