@@ -1,4 +1,4 @@
-/* Imports */
+/* Imports *
 
 /* Get DOM Elements */
 const article = document.getElementById('display');
@@ -8,13 +8,16 @@ const climateSelect = document.getElementById('climate-select');
 const climateImg = document.getElementById('climate-img');
 const architectureSelect = document.getElementById('architecture-select');
 const architectureImg = document.getElementById('architecture-img');
+const attractionList = document.getElementById('attraction-list');
+const attractionInput = document.getElementById('attraction-input');
+const addAttractionButton = document.getElementById('add-attraction-button');
 
 /* State */
 const city = {
     name: '',
     climate: 'tropical',
     architecture: 'mid-century',
-    attractions: '',
+    attractions: [],
 };
 /* Events */
 nameInput.addEventListener('input', () => {
@@ -32,6 +35,12 @@ architectureSelect.addEventListener('change', () => {
     displayCity();
 });
 
+addAttractionButton.addEventListener('click', () => {
+    city.attractions.push(attractionInput.value);
+    displayAttractions();
+    attractionInput.value = '';
+});
+
 /* Display Functions */
 function displayCity() {
     article.classList.value = '';
@@ -40,5 +49,16 @@ function displayCity() {
     climateImg.src = 'assets/' + city.climate + '-climate.jpeg';
     architectureImg.src = 'assets/' + city.architecture + '-architecture.jpeg';
 }
+
+function displayAttractions() {
+    attractionList.innerHTML = '';
+
+    for (const attraction of city.attractions) {
+        const liElement = document.createElement('li');
+        liElement.textContent = attraction;
+        attractionList.append(liElement);
+    }
+}
 // (don't forget to call any display functions you want to run on page load!)
 displayCity();
+displayAttractions();
